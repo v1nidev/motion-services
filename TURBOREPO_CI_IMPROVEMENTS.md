@@ -11,11 +11,13 @@ This document outlines potential optimizations for CI workflows using Turborepo 
 ### Options:
 
 #### A. Vercel Remote Cache (Recommended - Easiest)
+
 - Free for personal use
 - Zero infrastructure setup
 - Automatic cache management
 
 **Setup:**
+
 ```bash
 # Install Turbo globally or use npx
 npx turbo login
@@ -23,6 +25,7 @@ npx turbo link
 ```
 
 Add to CI workflow:
+
 ```yaml
 env:
   TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -30,11 +33,13 @@ env:
 ```
 
 #### B. GitHub Actions Cache
+
 - Free, built into GitHub
 - No external service dependencies
 - Requires manual setup
 
 Add to `turbo.json`:
+
 ```json
 {
   "remoteCache": {
@@ -44,12 +49,14 @@ Add to `turbo.json`:
 ```
 
 Add to CI workflow before running tasks:
+
 ```yaml
 - name: Setup Turbo Cache
   uses: rharkor/caching-for-turbo@v1.5
 ```
 
 #### C. Self-Hosted
+
 - Full control over cache storage
 - Can use S3, Google Cloud Storage, etc.
 - More complex setup
@@ -76,6 +83,7 @@ Update CI jobs to use `--filter`:
 ```
 
 For PRs, use:
+
 ```yaml
 - name: Lint
   run: pnpm lint --filter='...[origin/main]'
@@ -124,6 +132,7 @@ This only runs tasks on packages that changed between the current branch and mai
 ```
 
 ### Key Additions:
+
 - **inputs**: Defines which files affect the task (better cache invalidation)
 - **env**: Environment variables that should invalidate cache
 - **outputs**: Clear definition of what gets cached (already mostly done)
@@ -161,6 +170,7 @@ This only runs tasks on packages that changed between the current branch and mai
 **Impact:** Even faster CI by running independent tasks in parallel within a single job.
 
 ### Option A: Single Job (Faster for small monorepos)
+
 ```yaml
 jobs:
   ci:
@@ -183,16 +193,17 @@ jobs:
 ```
 
 ### Option B: Keep Separate Jobs (Current - Better for visibility)
+
 Current approach is fine for better GitHub UI visibility and error isolation.
 
 ## Summary of Potential Improvements
 
-| Feature | Complexity | Impact | Time Savings |
-|---------|-----------|--------|--------------|
-| Remote Caching | Low | High | 50-90% |
-| Filtered Tasks | Low | Medium | 30-70% |
-| Better turbo.json | Low | Medium | 10-20% |
-| CI Flags | Low | Low | 5-10% |
+| Feature           | Complexity | Impact | Time Savings |
+| ----------------- | ---------- | ------ | ------------ |
+| Remote Caching    | Low        | High   | 50-90%       |
+| Filtered Tasks    | Low        | Medium | 30-70%       |
+| Better turbo.json | Low        | Medium | 10-20%       |
+| CI Flags          | Low        | Low    | 5-10%        |
 
 ## Recommended Implementation Order
 
