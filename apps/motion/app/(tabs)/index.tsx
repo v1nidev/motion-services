@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 import { Platform, StyleSheet } from 'react-native'
 
 import { Image } from 'expo-image'
@@ -11,6 +13,16 @@ import { ThemedText } from '@/components/themed-text'
 import { ThemedView } from '@/components/themed-view'
 
 export default function HomeScreen() {
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (isLoading) {
+        setIsLoading(false)
+      }
+    }, 1000)
+  }, [])
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
