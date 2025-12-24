@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
+export TURBO_TELEMETRY_DISABLED=1
 pnpm lint && pnpm type-check
