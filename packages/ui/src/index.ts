@@ -1,5 +1,8 @@
-export { Button } from './button'
-export type { ButtonProps } from './button'
+export * from './core/colors'
+export * from './core/typography'
+export * from './core/radii'
+export * from './core/spacing'
+export * from './core/border'
 
-export { Card } from './card'
-export type { CardProps } from './card'
+export * from './button'
+export * from './card'
