@@ -53,6 +53,9 @@ build
 # turbo
 .turbo
 
+# ladle
+.ladle/build
+
 # generated native folders
 /ios
 /android
