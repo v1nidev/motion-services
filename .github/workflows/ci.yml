@@ -11,6 +11,9 @@ on:
 permissions:
   contents: read
 
+env:
+  HUSKY: 0 # Disable husky installation in CI - https://typicode.github.io/husky/how-to.html#ci-server-and-docker
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
