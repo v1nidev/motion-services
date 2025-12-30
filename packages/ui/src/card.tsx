@@ -1,6 +1,8 @@
 import React, { ReactNode } from 'react'
 
-import { StyleSheet, View, ViewStyle } from 'react-native'
+import { View, ViewStyle } from 'react-native'
+
+import { StyleSheet } from 'react-native-unistyles'
 
 export interface CardProps {
   children: ReactNode

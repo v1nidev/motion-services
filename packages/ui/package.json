@@ -16,7 +16,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-unistyles": "*"
   },
   "devDependencies": {
     "@ladle/react": "^5.1.1",

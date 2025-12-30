@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { Pressable, StyleSheet, Text, ViewStyle } from 'react-native'
+import { Pressable, Text, ViewStyle } from 'react-native'
+
+import { StyleSheet } from 'react-native-unistyles'
 
 export interface ButtonProps {
   title: string

@@ -56,10 +56,6 @@ build
 # ladle
 .ladle/build
 
-# generated native folders
-/ios
-/android
-
 # misc
 app-example
 
