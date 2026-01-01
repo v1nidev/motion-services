@@ -21,7 +21,7 @@ export const AllPresets: Story = () => (
 
     <View style={styles.column}>
       <Text style={styles.title}>Warm Earth</Text>
-      <GrainyGradientBox {...GrainyGradientPresets.warmEarth} width={300} height={200} />
+      {/* <GrainyGradientBox {...GrainyGradientPresets.warmEarth} width={300} height={200} /> */}
     </View>
 
     <View style={styles.column}>
@@ -41,7 +41,7 @@ export const AllPresets: Story = () => (
 
     <View style={styles.column}>
       <Text style={styles.title}>Coral Beige</Text>
-      <GrainyGradientBox {...GrainyGradientPresets.coralBeige} width={300} height={200} />
+      {/* <GrainyGradientBox {...GrainyGradientPresets.coralBeige} width={300} height={200} /> */}
     </View>
   </View>
 )
@@ -181,11 +181,11 @@ export const DifferentSizes: Story = () => (
   <View style={[styles.grid, { alignItems: 'center' }]}>
     <GrainyGradientBox {...GrainyGradientPresets.coralFade} width={100} height={100} borderRadius={8} />
 
-    <GrainyGradientBox {...GrainyGradientPresets.warmEarth} width={200} height={150} borderRadius={16} />
+    {/* <GrainyGradientBox {...GrainyGradientPresets.warmEarth} width={200} height={150} borderRadius={16} /> */}
 
     <GrainyGradientBox {...GrainyGradientPresets.lightGlow} width={300} height={200} borderRadius={24} />
 
-    <GrainyGradientBox {...GrainyGradientPresets.coralBeige} width={400} height={250} borderRadius={32} />
+    {/* <GrainyGradientBox {...GrainyGradientPresets.coralBeige} width={400} height={250} borderRadius={32} /> */}
   </View>
 )
 

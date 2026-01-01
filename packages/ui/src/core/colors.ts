@@ -1,11 +1,14 @@
 export const colors = {
+  white: {
+    '050': 'hsl(0, 0%, 100%)',
+  },
   coral: {
     '050': 'hsl(6, 100%, 97%)',
     '100': 'hsl(6, 100%, 93%)',
     '200': 'hsl(6, 100%, 88%)',
     '300': 'hsl(6, 100%, 82%)',
     '400': 'hsl(6, 100%, 75%)',
-    '500': 'hsl(6, 100%, 67%)', // Vibrant Coral
+    '500': 'hsl(6, 100%, 67%)', // Base - Vibrant Coral
     '600': 'hsl(6, 100%, 57%)',
     '700': 'hsl(6, 100%, 47%)',
     '800': 'hsl(6, 100%, 33%)',
@@ -22,8 +25,21 @@ export const colors = {
     '600': 'hsl(0, 0%, 36%)',
     '700': 'hsl(0, 0%, 27%)',
     '800': 'hsl(0, 0%, 18%)',
-    '900': 'hsl(0, 0%, 9%)', // Carbon Black
+    '900': 'hsl(0, 0%, 9%)', // Base - Carbon Black
     '950': 'hsl(0, 0%, 3%)',
+  },
+  teal: {
+    '050': 'hsl(179, 100%, 97%)',
+    '100': 'hsl(179, 95%, 93%)',
+    '200': 'hsl(179, 90%, 88%)',
+    '300': 'hsl(179, 85%, 82%)',
+    '400': 'hsl(179, 80%, 75%)',
+    '500': 'hsl(179, 75%, 67%)', // Vibrant Teal
+    '600': 'hsl(179, 65%, 55%)',
+    '700': 'hsl(179, 55%, 43%)',
+    '800': 'hsl(179, 45%, 31%)',
+    '900': 'hsl(179, 35%, 16%)', // Base
+    '950': 'hsl(179, 25%, 10%)',
   },
   beige: {
     '050': 'hsl(50, 15%, 96%)',
@@ -40,80 +56,100 @@ export const colors = {
   },
   papaya: {
     '050': 'hsl(38, 100%, 98%)',
-    '100': 'hsl(38, 100%, 97%)',
-    '200': 'hsl(38, 100%, 96%)',
-    '300': 'hsl(38, 100%, 95%)',
-    '400': 'hsl(38, 100%, 93%)',
-    '500': 'hsl(38, 100%, 91%)', // Papaya Whip
-    '600': 'hsl(38, 100%, 75%)',
-    '700': 'hsl(38, 100%, 60%)',
-    '800': 'hsl(38, 100%, 45%)',
-    '900': 'hsl(38, 100%, 30%)',
-    '950': 'hsl(38, 100%, 18%)',
+    // '100': 'hsl(38, 95%, 97%)',
+    '100': 'hsl(38, 90%, 96%)',
+    // '300': 'hsl(38, 85%, 95%)',
+    '200': 'hsl(38, 80%, 93%)',
+    '300': 'hsl(38, 75%, 91%)', // Papaya Whip
+    '400': 'hsl(38, 70%, 85%)',
+    '500': 'hsl(38, 65%, 80%)',
+    '600': 'hsl(38, 60%, 75%)',
+    '700': 'hsl(38, 45%, 65%)',
+    '800': 'hsl(38, 40%, 52%)',
+    '900': 'hsl(38, 35%, 45%)',
+    '950': 'hsl(38, 25%, 30%)',
   },
   floral: {
     '050': 'hsl(54, 100%, 99.7%)',
-    '100': 'hsl(54, 100%, 99.5%)',
-    '200': 'hsl(54, 100%, 99.2%)',
-    '300': 'hsl(54, 100%, 99%)',
-    '400': 'hsl(54, 100%, 98.5%)',
-    '500': 'hsl(54, 100%, 98%)', // Floral White
-    '600': 'hsl(54, 100%, 80%)',
-    '700': 'hsl(54, 100%, 65%)',
-    '800': 'hsl(54, 100%, 50%)',
-    '900': 'hsl(54, 100%, 35%)',
-    '950': 'hsl(54, 100%, 20%)',
+    '100': 'hsl(54, 100%, 99%)',
+    '200': 'hsl(54, 100%, 98.5%)',
+    '300': 'hsl(54, 100%, 97%)', // Floral White
+    '400': 'hsl(54, 100%, 95%)',
+    '500': 'hsl(54, 100%, 90%)',
+    '600': 'hsl(54, 100%, 85%)',
+    '700': 'hsl(54, 100%, 75%)',
+    '800': 'hsl(54, 100%, 65%)',
+    '900': 'hsl(54, 100%, 50%)',
+    '950': 'hsl(54, 100%, 35%)',
   },
+  ivory: {
+    '050': 'hsl(52, 44%, 98%)',
+    '100': 'hsl(52, 44%, 96%)',
+    '200': 'hsl(52, 44%, 94%)',
+    '300': 'hsl(52, 44%, 93%)', // Base - Ivory
+    '400': 'hsl(52, 44%, 88%)',
+    '500': 'hsl(52, 44%, 82%)',
+    '600': 'hsl(52, 40%, 75%)',
+    '700': 'hsl(52, 35%, 65%)',
+    '800': 'hsl(52, 30%, 50%)',
+    '900': 'hsl(52, 25%, 35%)',
+    '950': 'hsl(52, 20%, 25%)',
+  },
+}
+
+export const baseColorPalette = [
+  {
+    name: 'coral',
+    value: colors.coral['500'],
+  },
+  {
+    name: 'black',
+    value: colors.black['900'],
+  },
+  {
+    name: 'teal',
+    value: colors.teal['900'],
+  },
+  {
+    name: 'papaya',
+    value: colors.papaya['300'],
+  },
+  {
+    name: 'floral',
+    value: colors.floral['300'],
+  },
+]
+
+export const semantic = {
+  layerBackground: `linear-gradient(165deg, ${colors.papaya['500']} 17.06%, ${colors.papaya['300']} 76.43%)`,
+  layerPrimarySurface: colors.papaya['050'],
+
+  // objects
+  objectAccent: 'coral.500',
+
+  objectPositive: 'teal.500',
+  objectPositiveHover: 'teal.700',
+  objectPositivePressed: 'teal.300',
+  objectPositiveDisabled: 'teal.100',
+
+  objectNegative: 'coral.700',
+  objectNegativeHover: 'coral.900',
+  objectNegativePressed: 'coral.300',
+  objectNegativeDisabled: 'coral.100',
+
+  objectWarn: 'floral.700',
+  objectWarnHover: 'floral.800',
+  objectWarnPressed: 'floral.500',
+  objectWarnDisabled: 'floral.200',
+
+  // // text
+  // textPrimary: 'black.900',
+  // textPrimaryInverted: 'floral.050',
+  // textSecondary: 'black.700',
+  // textTertiary: 'black.500',
+  // textDisabled: 'black.300',
 }
 
 // https://coolors.co/ff6858-181818-a7a289-f5f3e5-fffef5
 // https://coolors.co/ff6858-181818-a7a289-ffefd3-fffef5
 // https://coolors.co/ff6858-181818-ffefd3-f5f3e5-fffef5
-
-export const baseColorPalette = [
-  {
-    name: 'Vibrant Coral',
-    hex: 'ff6858',
-    rgb: [255, 104, 88],
-    cmyk: [0, 59, 65, 0],
-    hsb: [6, 65, 100],
-    hsl: [6, 100, 67],
-    lab: [63, 57, 38],
-  },
-  {
-    name: 'Carbon Black',
-    hex: '181818',
-    rgb: [24, 24, 24],
-    cmyk: [0, 0, 0, 91],
-    hsb: [0, 0, 9],
-    hsl: [0, 0, 9],
-    lab: [8, 0, 0],
-  },
-  {
-    name: 'Khaki Beige',
-    hex: 'a7a289',
-    rgb: [167, 162, 137],
-    cmyk: [0, 3, 18, 35],
-    hsb: [50, 18, 65],
-    hsl: [50, 15, 60],
-    lab: [66, -2, 14],
-  },
-  {
-    name: 'Papaya Whip',
-    hex: 'ffefd3',
-    rgb: [255, 239, 211],
-    cmyk: [0, 6, 17, 0],
-    hsb: [38, 17, 100],
-    hsl: [38, 100, 91],
-    lab: [95, 1, 15],
-  },
-  {
-    name: 'Floral White',
-    hex: 'fffef5',
-    rgb: [255, 254, 245],
-    cmyk: [0, 0, 4, 0],
-    hsb: [54, 4, 100],
-    hsl: [54, 100, 98],
-    lab: [100, -1, 4],
-  },
-]

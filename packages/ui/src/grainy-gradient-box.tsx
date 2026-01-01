@@ -147,11 +147,11 @@ export const GrainyGradientPresets = {
     colorEnd: colors.black['500'],
     direction: 'vertical' as const,
   },
-  warmEarth: {
-    colorStart: colors.beige['300'],
-    colorEnd: colors.beige['600'],
-    direction: 'horizontal' as const,
-  },
+  // warmEarth: {
+  //   colorStart: colors.vanillaCream['300'],
+  //   colorEnd: colors.vanillaCream['600'],
+  //   direction: 'horizontal' as const,
+  // },
   coralFade: {
     colorStart: colors.coral['300'],
     colorEnd: colors.coral['700'],
@@ -167,9 +167,9 @@ export const GrainyGradientPresets = {
     colorEnd: colors.black['400'],
     direction: 'diagonal' as const,
   },
-  coralBeige: {
-    colorStart: colors.coral['400'],
-    colorEnd: colors.beige['500'],
-    direction: 'diagonal' as const,
-  },
+  // coralBeige: {
+  //   colorStart: colors.coral['400'],
+  //   colorEnd: colors.beige['500'],
+  //   direction: 'diagonal' as const,
+  // },
 }

@@ -6,4 +6,6 @@ export * from './core/border'
 
 export * from './button'
 export * from './card'
+export * from './copyable'
 export * from './grainy-gradient-box'
+export * from './workout-card'
