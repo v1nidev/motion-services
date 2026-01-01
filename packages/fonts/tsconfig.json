@@ -1,0 +1,9 @@
+{
+  "extends": "@monorepo/typescript-config/react-native.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "lib": ["esnext", "dom"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "fonts"]
+}

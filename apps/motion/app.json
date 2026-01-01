@@ -40,6 +40,152 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./packages/fonts/fonts/Gilroy/Gilroy-UltraLight.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-UltraLightItalic.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-Thin.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-ThinItalic.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-Light.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-LightItalic.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-Regular.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-RegularItalic.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-Medium.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-MediumItalic.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-SemiBold.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-SemiBoldItalic.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-Bold.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-BoldItalic.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-ExtraBold.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-ExtraBoldItalic.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-Heavy.ttf",
+            "./packages/fonts/fonts/Gilroy/Gilroy-HeavyItalic.ttf"
+          ],
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "Gilroy",
+                "fontDefinitions": [
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-UltraLight.ttf",
+                    "weight": 100,
+                    "style": "normal"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-UltraLightItalic.ttf",
+                    "weight": 100,
+                    "style": "italic"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-Thin.ttf",
+                    "weight": 200,
+                    "style": "normal"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-ThinItalic.ttf",
+                    "weight": 200,
+                    "style": "italic"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-Light.ttf",
+                    "weight": 300,
+                    "style": "normal"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-LightItalic.ttf",
+                    "weight": 300,
+                    "style": "italic"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-Regular.ttf",
+                    "weight": 400,
+                    "style": "normal"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-RegularItalic.ttf",
+                    "weight": 400,
+                    "style": "italic"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-Medium.ttf",
+                    "weight": 500,
+                    "style": "normal"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-MediumItalic.ttf",
+                    "weight": 500,
+                    "style": "italic"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-SemiBold.ttf",
+                    "weight": 600,
+                    "style": "normal"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-SemiBoldItalic.ttf",
+                    "weight": 600,
+                    "style": "italic"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-Bold.ttf",
+                    "weight": 700,
+                    "style": "normal"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-BoldItalic.ttf",
+                    "weight": 700,
+                    "style": "italic"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-ExtraBold.ttf",
+                    "weight": 800,
+                    "style": "normal"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-ExtraBoldItalic.ttf",
+                    "weight": 800,
+                    "style": "italic"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-Heavy.ttf",
+                    "weight": 900,
+                    "style": "normal"
+                  },
+                  {
+                    "path": "./packages/fonts/fonts/Gilroy/Gilroy-HeavyItalic.ttf",
+                    "weight": 900,
+                    "style": "italic"
+                  }
+                ]
+              }
+            ]
+          },
+          "ios": {
+            "fonts": [
+              "./packages/fonts/fonts/Gilroy/Gilroy-UltraLight.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-UltraLightItalic.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-Thin.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-ThinItalic.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-Light.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-LightItalic.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-Regular.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-RegularItalic.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-Medium.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-MediumItalic.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-SemiBold.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-SemiBoldItalic.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-Bold.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-BoldItalic.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-ExtraBold.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-ExtraBoldItalic.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-Heavy.ttf",
+              "./packages/fonts/fonts/Gilroy/Gilroy-HeavyItalic.ttf"
+            ]
+          }
+        }
       ]
     ],
     "experiments": {

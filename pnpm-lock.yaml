@@ -33,6 +33,9 @@ importers:
       '@expo/vector-icons':
         specifier: ^15.0.3
         version: 15.0.3(expo-font@14.0.10(expo@54.0.30)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
+      '@monorepo/fonts':
+        specifier: workspace:^
+        version: link:../../packages/fonts
       '@monorepo/ui':
         specifier: workspace:^
         version: link:../../packages/ui
@@ -164,9 +167,32 @@ importers:
         specifier: ^5.0.0
         version: 5.9.3
 
+  packages/fonts:
+    dependencies:
+      expo-font:
+        specifier: '*'
+        version: 14.0.10(expo@54.0.30)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
+      react:
+        specifier: '*'
+        version: 19.1.0
+      react-native:
+        specifier: '*'
+        version: 0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0)
+    devDependencies:
+      '@monorepo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      typescript:
+        specifier: ~5.9.2
+        version: 5.9.3
+
   packages/typescript-config: {}
 
   packages/ui:
+    dependencies:
+      '@monorepo/fonts':
+        specifier: workspace:*
+        version: link:../fonts
     devDependencies:
       '@ladle/react':
         specifier: ^5.1.1
