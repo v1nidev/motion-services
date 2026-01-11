@@ -9,6 +9,7 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "type-check": "tsc --noEmit",
     "ladle:dev": "ladle serve",
     "ladle:build": "ladle build",

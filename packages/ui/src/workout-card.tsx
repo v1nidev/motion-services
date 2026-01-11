@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Image, ImageSourcePropType, Pressable, Text, View, ViewStyle } from 'react-native'
+import { Image, type ImageSourcePropType, Pressable, Text, View, type ViewStyle } from 'react-native'
 
 import AntDesign from '@expo/vector-icons/AntDesign'
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6'

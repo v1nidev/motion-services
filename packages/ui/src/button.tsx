@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Pressable, Text, ViewStyle } from 'react-native'
+import { Pressable, Text, type ViewStyle } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 

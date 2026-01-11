@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { DimensionValue, StyleSheet, View, ViewStyle } from 'react-native'
+import { type DimensionValue, StyleSheet, View, type ViewStyle } from 'react-native'
 
 import { colors } from './core/colors'
 

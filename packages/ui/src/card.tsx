@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react'
+import React, { type ReactNode } from 'react'
 
-import { View, ViewStyle } from 'react-native'
+import { View, type ViewStyle } from 'react-native'
 
 import { StyleSheet } from 'react-native-unistyles'
 

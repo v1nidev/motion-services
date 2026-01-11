@@ -22,10 +22,31 @@ module.exports = [
       'react-hooks': reactHooks,
     },
     rules: {
+      // General rules
+      'no-inner-declarations': 'off',
+      'prefer-const': 'off',
+
       // TypeScript rules
       '@typescript-eslint/no-unused-vars': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-non-null-assertion': 'warn',
+      '@typescript-eslint/no-inferrable-types': 'off',
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        {
+          disallowTypeAnnotations: true,
+          prefer: 'type-imports',
+          fixStyle: 'inline-type-imports',
+        },
+      ],
+      '@typescript-eslint/no-empty-interface': 'off',
+      '@typescript-eslint/no-empty-object-type': [
+        'error',
+        {
+          allowInterfaces: 'with-single-extends',
+        },
+      ],
+      '@typescript-eslint/no-empty-function': 'off', // Allow no-op functions
 
       // React rules
       'react/jsx-key': 'error',
